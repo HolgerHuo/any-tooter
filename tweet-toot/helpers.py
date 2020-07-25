@@ -23,6 +23,8 @@ def _config(key):
         return os.environ[key]
 
     my_file = _read_file(os.path.join(base_path, "config.json"))
+    if len(sys.argv) > 1:
+        my_file = _read_file(sys.argv[1])
     if not my_file:
 
         logger.critical("Main config.json file not found. Exiting.")
