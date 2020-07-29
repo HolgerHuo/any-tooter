@@ -388,7 +388,7 @@ class TweetToot:
 
         data = {}
         data["status"] = tweet_body
-        data["visibility"] = "public"
+        data["visibility"] = "unlisted"
         if media_id != "null":
             data["media_ids"] = [media_id]
 
