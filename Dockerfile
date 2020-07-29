@@ -1,6 +1,6 @@
-# Docker image for Tweet-Toot project.
+# Docker image for any-tooter project.
 FROM python:3.7-alpine
-LABEL Author="ayush@ayushsharma.in"
+LABEL Author="ayush@ayushsharma.in, holgerhuo@sns.holger.net.cn"
 
 COPY . /tweet-toot
 
